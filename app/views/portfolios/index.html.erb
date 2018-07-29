@@ -1,0 +1,6 @@
+<% portfolio_items.each do %>
+<%= portfolio_items.title %>
+<%= portfolio_items.subtitle %>
+<%= portfolio_items.body %>
+<%= image_tag @portfolio_items.thumb_image unless !portfolio_item.thumb_image.nil?  %>
+<% end %>

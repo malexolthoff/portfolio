@@ -1,0 +1,21 @@
+<h1>Edit Your Portfolio Item</h1>
+<%= form_for(@portfolio_item) do |f| %>
+  
+  <div class="field">
+    <%=f.lable :title %>
+    <%=f.textfield :title %>
+  </div>
+
+  <div class="field">
+    <%=f.lable :subtitle %>
+    <%=f.textfield :subtitle %>
+  </div>
+
+  <div class="field">
+    <%=f.lable :body %>
+    <%=f.textfield :body %>
+  </div>
+
+  <div class="action">
+    <%=f.submit %>
+  </div>
